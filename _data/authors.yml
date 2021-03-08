@@ -1,0 +1,10 @@
+
+Billy Rick:
+  name: Jose Miguel Arigita
+  picture: /images/bio-photo-2.jpg
+  twitter: "@billyrick"
+  links:
+    - title: Github
+      url: https://github.com/jarigita
+      icon: fab fa-twitter-square
+
