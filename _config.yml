@@ -13,52 +13,82 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-remote_theme: mmistakes/so-simple-theme
-skin: "/assets/css/skins/default.css"
-locale: en-US
-title: "My Awesome Site"
-description: "It really is the best."
-baseurl: # the subpath of your site, e.g. "/blog"
-url: https://jarigita.github.io/
-logo: "/images/logo.png"
-date_format: "%B %-d, %Y"
-read_time: # reading time estimates, e.g. true
-words_per_minute: # 200
-mathjax:
-  enable: # MathJax equations, e.g. true, false (default)
-  combo:  # "tex-svg" (default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
-  tags:  # "none", "ams" (default), "all"
-google_fonts:
-  - name: "Source Sans Pro"
-    weights: "400,400i,700,700i"
-  - name: "Lora"
-    weights: "400,400i,700,700i"
-google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
-disqus:
-  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
-twitter:
-  username: # site's Twitter username, e.g. "mmistakes"
+title: Jose Miguel Arigita
+title_separator: "-"
+name: Jose Miguel Arigita
+subtitle: Thoughts on Software development, DevOps and real production problems.
+description: >-
+  I am a developer from Madrid.
+  This blog contains my thoughts on software development, agile devops, real problems at work and what I have learn in more than 20 years.
+  
+teaser:
+logo:
+# set by jekyll-github-metadata plugin
+# title: repo name
+# description: repo tagline
+# url: github pages domain
+# baseurl: project name
+repository: jarigita/jarigita.github.io
 
-# Liquid
-liquid:
-  error_mode: strict
+# jekyll-seo-tag settings
+twitter:
+  username: jarigita
+og_image: /assets/images/avatar.jpg
+social:
+  links:
+    - https://linkedin.com/in/arigita
+    - https://twitter.com/jarigita
+    - https://github.com/jarigita
+#google_site_verification: wZvWB-E-2k1v7HV_pz9J0LT2PEqu0_zB9UfjXukklnY
+
+# analytics
+analytics:
+  provider: google-gtag # false (default), google, google-universal, custom
+  google:
+    tracking_id: UA-167766744-1
+    anonymize_ip: true # true, false (default)
+
+# comments
+comments:
+  provider: disqus
+  disqus:
+    shortname: jarigita
+  utterances:
+    theme: github-light # github-dark
+    issue_term: pathname
+
+# search
+search: true
+search_provider: lunr # lunr (default), algolia, google
+google:
+  search_engine_id: 012049118435335239890:yyutqdlocqn
+
+# github fixed values
+# https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#configuring-jekyll-in-your-github-pages-site
+lsi: false
+safe: true
+source: . # [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
 # Build settings
+github: # to remove github metadata warning: https://github.com/github/pages-gem/issues/399
+  - metadata
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: air # default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+# Outputting
 permalink: /:categories/:title/
-markdown: kramdown
-feed:
-  path: atom.xml
+paginate_path: /page:num/
+paginate: 5 # amount of posts to show
+timezone: Europe/Madrid # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Pagination - https://jekyllrb.com/docs/pagination/
- paginate: 10
- paginate_path: /page:num/
-
-# Search
-search_full_content: true # can have performance implications for large sites
-
-# Taxonomy pages
-# category_archive_path: "/categories/#"
-# tag_archive_path: "/tags/#"
+include:
+  - _pages
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -72,54 +102,96 @@ search_full_content: true # can have performance implications for large sites
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Plugins (previously gems:)
 plugins:
+  # github enabled
+  # https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#plugins
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+  # github included
+  # https://github.com/github/pages-gem/blob/master/lib/github-pages/dependencies.rb
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-paginate
+  - jemoji
+  # github whitelisted
+  # https://github.com/github/pages-gem/blob/master/lib/github-pages/plugins.rb
+  - jekyll-include-cache
+  - jekyll-octicons
 
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /:collection/:path/
-
-# Front Matter Defaults
-defaults:
-  # Post defaults
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: post
-      comments: true
-      share: true
-  # Recipe defaults
-  - scope:
-      path: "_projects"
-      type: projects
-    values:
-      layout: post
-      comments: true
-      share: true
-
-# Site Author
 author:
   name: Jose Miguel Arigita
-  picture:/images/aigita.jpg
-  email: jmab20@gmail.com
-  twitter:
+  avatar: /assets/images/avatar.jpg
+  bio:  .rchitec jada developer from Madrid.
+  location: Madrid
   links:
-  - title: GitHub
-    url: https://github.com/jarigita
-    icon: fab fa-github-square
+    - label: Email
+      icon: fas fa-fw fa-envelope
+      url: mailto:jose.miguel.arigita@gmail.com
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://linkedin.com/in/arigita
+    - label: Twitter
+      icon: fab fa-fw fa-twitter-square
+      url: https://twitter.com/jarigita
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/jarigita
 
-# Footer Links
-footer_links:
-  - title: GitHub
-    url: https://github.com/jarigita
-    icon: fab fa-github-square
-  - title: Feed
-    url: atom.xml
-    icon: fas fa-rss-square
+footer:
+  links:
+    - label: Email
+      icon: fas fa-fw fa-envelope
+      url: mailto:jose.miguel.arigita@gmail.com
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://linkedin.com/in/arigita
+    - label: Twitter
+      icon: fab fa-fw fa-twitter-square
+      url: https://twitter.com/jarigita
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/jarigita
 
+defaults:
+  # _posts
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      categories: [blog]
+      layout: single
+      author_profile: true
+      comments: true
+      read_time: true
+      related: true
+      share: true
+      toc: true
+  # _pages
+  - scope:
+      path: _pages
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      related: true
+      toc: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/

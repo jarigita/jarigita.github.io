@@ -1,8 +1,15 @@
-# Site navigation links
-
-- title: Posts
-  url: /posts/
-- title: Categories
-  url: /categories/
-- title: Search
-  url: /search/
+main:
+  - title: "About"
+    url: /about/
+  - title: "DebateOps"
+    url: /DebateOps/
+  - title: "Blogs"
+    url: /Blogs/
+  - title: "Posts"
+    url: /posts/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "spanish"
+    url: https://jarigita.github.io/es/
