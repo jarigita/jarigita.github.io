@@ -12,9 +12,7 @@ Most of my blogs are technical blogs written mainly for my own reference. I'd be
 
 <ul>
   {% for post in site.posts %}
-
-    <img src="http://127.0.0.1:4000/assets/images/{{post.photo}}" alt="{{post.title}}" style="width:50%">
-
+    <img src="/{{post.header.image}}" alt="{{post.title}}">
     {% include archive-single.html %}
   {% endfor %}
 </ul>

@@ -16,10 +16,10 @@
 title: Jose Miguel Arigita
 title_separator: "-"
 name: Jose Miguel Arigita
-subtitle: Thoughts on Software development, DevOps and real production problems.
+subtitle: Notes on Software development, DevOps.
 description: >-
   I am a developer from Madrid.
-  This blog contains my thoughts on software development, agile devops, real problems at work and what I have learn in more than 20 years.
+  This blog contains my notes on software development, agile devops, real problems at work and what I have learn in more than 20 years.
   
 teaser:
 logo:
@@ -134,7 +134,7 @@ plugins:
 author:
   name: Jose Miguel Arigita
   avatar: /assets/images/avatar.jpg
-  bio:  .rchitec jada developer from Madrid.
+  bio:  architec java, devops from Madrid.
   location: Madrid
   links:
     - label: Email

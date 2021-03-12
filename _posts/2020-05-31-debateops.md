@@ -3,7 +3,6 @@ title: Debateops. Por qué este blog.
 photo: "avatar.jpg"
 tags:
   - debateops
-  - github-pages
 ---
 
 
@@ -25,17 +24,3 @@ However, I am not going to let those content go to waste.
 
 Thank you for reading!
 
-Update: below are my completed posts on Jekyll and GitHub Pages.
-
-- [Understanding Jekyll and GitHub Pages][jekyll-gh-pages]
-- [Setting Jekyll Themes on GitHub Pages][jekyll-theme]
-
-[jekyll]: https://jekyllrb.com
-[gh-pages]: https://pages.github.com
-[medium]: https://medium.com
-[wordpress]: https://wordpress.org
-[jekyll-themes]: https://jekyllthemes.io
-[minimal-mistakees]: https://mmistakes.github.io/minimal-mistakes
-[michael-rose]: https://mademistakes.com
-[jekyll-gh-pages]: /blog/understanding-jekyll-and-github-pages/
-[jekyll-theme]: /blog/setting-jekyll-themes-on-github-pages/
