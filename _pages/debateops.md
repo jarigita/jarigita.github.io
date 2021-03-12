@@ -31,7 +31,7 @@ La idea es mostrar todos los pasos realizados, qué personas intervienen en cada
    Review
 
 #### Understanding where we are, where we want to be, and how to get there
-   - Sprint 0. [Environments](http://127.0.0.1:4000/blog/devopsFlow/)
+   - Sprint 0. [Environments](/blog/devopsFlow/)
    - Sprint 1. DEV
    - Sprint 2. QA
    - Sprint 3. STAGE   
