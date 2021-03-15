@@ -1,3 +1,15 @@
+---
+title: Debateops. Por qué este blog.
+header:
+  overlay_image: /assets/images/environments.png
+category:
+  - debateops
+tags:
+  - debateops
+  - agile
+  - devops
+---
+
 # DevOps process flow 
 
 devop philosophy in this project:

@@ -1,8 +1,11 @@
 ---
 title: Debateops. Por qué este blog.
-photo: "avatar.jpg"
+header:
+  overlay_image: /assets/images/debateops.png
 tags:
   - debateops
+  - agile
+  - devops
 ---
 
 
