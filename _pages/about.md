@@ -57,7 +57,7 @@ Objective:Users can ask for premium ADSL services in real-time.
 Team interaction: user interface in Yahoo TV, android mobile and adobe air application. Design an ui that can runs in three screens (mobile, desktop and TV), and of course in web(multiple screen size).
 
 #### CROSS Telefonica (Jun09/Jun10)
-OObjective:Telefonica service catalog, correlate commercial products with technical requirements.
+Objective:Telefonica service catalog, correlate commercial products with technical requirements.
 Team interaction: analysis, design, implementation of web services, xml handling. 
 
 #### PIAM Telefonica - Jun. 2008 / Jun. 2009
@@ -106,10 +106,9 @@ Non-exhaustive lists of my technology skills, from most proficient to least.
 | Deployment            | Docker, Kubernetes, Linux, Travis CI, GitHub Actions                 |
 | Database              | SQL, Oracle, Mongodb, MySQL                                          |
 
-circulo.jpg
 
 
-## Certificaciones
+## Certifications
 
 | Date         |       Certificate             | Provider  |
 | ------------ | ----------------------------- | -------- |

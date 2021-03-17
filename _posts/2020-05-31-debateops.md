@@ -1,5 +1,5 @@
 ---
-title: Debateops. Por qué este blog.
+title: Debateops. Why blog?.
 header:
   overlay_image: assets/images/debateops.gif
   caption: "debateops"
@@ -13,11 +13,19 @@ tags:
 
 ## DebateOps
 
-Esto es un blog técnico sobre desarrollo de software, más sobre visión general, qué problemas me he encontrado y qué decisiones hay que tomar, principalmente orientado hacia Agile, devops (¿cómo conseguir mejorar?) queremos poner siempre ejemplos sencillos y si se puede aportar código, poder tocar y ejecutar algo (que no todo sea entelequia). No creemos que la solución sea una herramienta o una plataforma (aunque se veran herramientas), creemos en las personas, que el cambio (la evolución continua) la realizan las personas, por eso no pretendemos aportar soluciones mágicas, sino sugerir un debate, presentar ideas formas de aplicarlas, pero siempre sabiendo por qué y para qué.  
-   Para no enrollarnos más vamos a poner las cosas que iremos viendo en este blog.
-   El punto de inicio es que queremos aplicar Agile y devops sobre un proyecto, el proyecto por ponerlo sencillo es este mismo blog, es decir, partimos de cero, queremos crear un proyecto público con herramientas en java y python, herramientas que nos ayudan a la hora de desarrollar y generar más y mejor código.
-   Este proyecto se almacenará en github, en código abierto, siempre te lo porás bajar y compilar, que no eres programador y no quieres saber nada de eso, también este blog es para tí, no te preocupes, se subiran imágenes de dockers para que las puedas ejecutar, a mano o con jenkins u otras herramientas. Como ya he comentado antes no damos soluciones mágicas sino mostramos una visión general y que cada uno escoga, pueda seguir investigando y si luego nos comenta su experiencia, pues mucho mejor.
-   Otro punto importante es saber quién es quién. No te puedes mover por una empresa sin saber a quién hay que pedirle las cosas, quién suelta los marrones, ... Por eso es importante saber quiénes participan en el desarrollo de un proyecto, qué funciones y papeles hay, qué hacer y qué no. 
-   La idea es mostrar todos los pasos realizados, qué personas intervienen en cada paso, decisiones y como le pasan el marrón a los siguientes. Ver los diferentes entornos de progamación, y que todo sea automático, registrado e indepenidente de las personas que lo realizan, es decir, que no haya magia oscura, se pueda seguir traza de lo que se ha hecho, ver dónde estamos, y si hace falta otra persona o varias puedan seguir adelante sin demasiados problemas. 
+It's a technical blog about software development, about real problems that I have encountered, how to improve productivity or to avoid always making the same mistakes, focused on Agile, devops. We always want to put simple examples, with code, with docker that you can try. We do not believe that the solution is a tool or a platform(although of course we will talk about tools), we believe in people,  the change (continuous everything) is made by people, that's why we are not going to provide magic solutions, only suggest a debate, show ideas, ways to apply them, starting from the why and what for.  
+<br>
+The main things that we will see in this blog.
+<br>
+The first thing is that we want to apply Agile and Devops in a project.
+The project to put it simple is this blog, we want to create a public project with tools in java and python, tools that help us when developing and generating more and better code.
+<br>
+This project will be stored in github, as open source, you can always download and compile it, if you are not a programmer you can download images of dockers that you can run, by hand or with jenkins or other tools 
+<br>
+As I have already mentioned before, we do not give magic solutions, we show an overview, a starting point for further investigation . 
+<br>
+It is important to know who participates in the development of a project, what functions and roles there are, what to do and what not to do.
+<br> 
+We will show all the steps performed, which people are involved in each step, decisions and how they pass the brown to the following. Show the different programming environments, all automatic, registered and independent of the people who perform it, no secrests no strangers things, trace of what has been done, know where we are and we are going. 
 
 
