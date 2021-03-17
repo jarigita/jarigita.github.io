@@ -4,4 +4,36 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 author_profile: true
+
+title: Jarigita blog
+permalink: /
+header:
+  overlay_color: "#393e46"
+  overlay_image: /assets/images/aqua.jpg
+
+all_posts:
+  - url: "/Blogs/"
+    btn_label: "All Posts"
+    btn_class: "btn btn--small btn--inverse"
+
+all_projects:
+    - url: "/portfolio/"
+      btn_label: "All Projects"
+      btn_class: "btn btn--small btn--inverse"
 ---
+
+<h1><center>blogs recientes</center></h1>
+<p>La mayoría de los blogs son notas técnicas para acordarme. Espero que a lo mejor os puedan ser útiles.</p>
+<div>
+<ul>
+  {% for post in site.posts %}
+    <figure>
+      <a href="{{post.url}}"><img src="/{{post.header.overlay_image}}" alt="{{post.title}}"></a>
+    </figure>
+    {% include archive-single.html %}
+  {% endfor %}
+</ul>
+
+</div>
+<h1><center>Mis proyectos</center></h1>
+debateops

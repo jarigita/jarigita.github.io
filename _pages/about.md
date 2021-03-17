@@ -14,7 +14,6 @@ author_profile: true
 comments: true
 
 ---
-## CV and more
 
  I've been working 20 years for Telefónica,  I know what to do and I have the expertise.
 My last job it's production engineer(devops) for telefonica kite m2m platform, solving real problems in production.

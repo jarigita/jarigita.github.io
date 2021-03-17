@@ -1,13 +1,15 @@
 ---
 title: Debateops. Por qué este blog.
 header:
-  overlay_image: /assets/images/debateops.png
+  overlay_image: assets/images/debateops.gif
+  caption: "debateops"
+categories:
+  - debateops
 tags:
   - debateops
   - agile
   - devops
 ---
-
 
 ## DebateOps
 
@@ -18,12 +20,4 @@ Esto es un blog técnico sobre desarrollo de software, más sobre visión genera
    Otro punto importante es saber quién es quién. No te puedes mover por una empresa sin saber a quién hay que pedirle las cosas, quién suelta los marrones, ... Por eso es importante saber quiénes participan en el desarrollo de un proyecto, qué funciones y papeles hay, qué hacer y qué no. 
    La idea es mostrar todos los pasos realizados, qué personas intervienen en cada paso, decisiones y como le pasan el marrón a los siguientes. Ver los diferentes entornos de progamación, y que todo sea automático, registrado e indepenidente de las personas que lo realizan, es decir, que no haya magia oscura, se pueda seguir traza de lo que se ha hecho, ver dónde estamos, y si hace falta otra persona o varias puedan seguir adelante sin demasiados problemas. 
 
-## What is next
-
-Given the amount of effort I have spent figuring out Jekyll on GitHub Pages,
-I thought it will be a good idea to share my understanding over a couple of posts.
-Rather ironic given my original purpose of sharing on data science applications.
-However, I am not going to let those content go to waste.
-
-Thank you for reading!
 

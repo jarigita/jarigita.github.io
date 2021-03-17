@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+  build-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jarigita/web_es:0.0.1
+
+  website:
+    stdin_open: true
+    tty: true
+    restart: "no"
+    image: jarigita/web_es:1.0.1
+    container_name: website
+    working_dir: /root/src
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+        bundle exec jekyll serve --host 0.0.0.0
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/root/src
+    healthcheck:
+      test: "curl http://localhost:4000/"
+      interval: 10s
+      timeout: 10s
+      retries: 5
+

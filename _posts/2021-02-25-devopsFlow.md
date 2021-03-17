@@ -1,15 +1,14 @@
 ---
-title: Debateops. Por qué este blog.
+title: Environments. DevOps process flow.
 header:
-  overlay_image: /assets/images/environments.png
+  overlay_image: assets/images/environmentsL.jpg
 category:
   - debateops
 tags:
   - debateops
-  - agile
-  - devops
+  - qa
+  - stage
 ---
-
 # DevOps process flow 
 
 devop philosophy in this project:

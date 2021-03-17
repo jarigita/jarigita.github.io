@@ -2,6 +2,13 @@
 title:  "DebateOps"
 layout: archive
 permalink: /DebateOps/
+header:
+  overlay_image: assets/images/debateops.gif
+  caption: "debateops"
+categories:
+  - debateops
+tags:
+  - debateops
 author_profile: true
 comments: true
 ---
@@ -31,7 +38,7 @@ La idea es mostrar todos los pasos realizados, qué personas intervienen en cada
    Review
 
 #### Understanding where we are, where we want to be, and how to get there
-   - Sprint 0. [Environments](/blog/devopsFlow/)
+   - Sprint 0. [Environments](/es/blog/devopsFlow/)
    - Sprint 1. DEV
    - Sprint 2. QA
    - Sprint 3. STAGE   

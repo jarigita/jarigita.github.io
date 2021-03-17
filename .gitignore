@@ -27,6 +27,7 @@ db.json
 node_modules/
 public/
 .deploy*/
+es/
 
 # Jekyll generated files
 .jekyll-cache
