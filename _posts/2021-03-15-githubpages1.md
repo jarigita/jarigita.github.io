@@ -1,5 +1,5 @@
 ---
-title: Crear un blog personal con github pages y jekyll.
+title: Create a personal blog with github pages and jekyll.
 header:
   overlay_image: assets/images/githubpages.gif
   caption: "debateops"
@@ -11,74 +11,74 @@ tags:
   - jekyll
 ---
 
-# Usamos github pages y jekyll para crear documentación estática tanto personal como de proyectos.
+# We use github pages and jekyll to create static personal and project documentation.
 
-## Por qué crear un blog
+## Should I Start a Blog?
 
-Queremos crear un blog personal, donde almacenar todas esas notas, esas cosas a recordar que luego nunca recordamos.
+We want to create a personal blog, where we can store all those notes, those things to remember that we never remember later.
 <br>
-En internet hay un montón de páginas que te dicen cómo se hacen las cosas, pero siempre es buena idea, si ya has realizado algo, anotarlo, porque dentro de unos días, cuando te lo pida algún compañero, o cuando lo vuelvas a necesitar, poder recordarlo y que cueste poco tiempo resolverlo, o simplemente, no tener que volver a buscar en internet lo que ya has buscado antes.
+On the internet there are a lot of pages that tell you how things are done, but it is always a good idea, if you have already done something, write it down, because in a few days, when a colleague asks for it, or when you need it again, being able to remember it and that it takes little time to solve it, or simply, not having to search the internet again for what you have already searched for before.
 <br>
-Lo más importante que queremos almacenar es código, scripts o en todo caso queremos manejarlos como si fuera código, y como ya tenemos proyectos almacenados en github, nuestra idea es aprovechar github y la oportunidad que nos ofrece con giyhub pages para tener una web estática.
+The first and most important thing to store is code, scripts and in any case we want to handle all things as if it were code, and since we already have projects stored in github, our idea is to take advantage of github and the opportunity it offers us with giyhub pages to have a static web.
 
-### Alternativas
+### Alternatives
 
-El punto más importante es la elección de las herramientas, porque queremos hacer poco esfuerzo (raṕido, fácil y sencillo), reaprovechar y/o utilizar markdown que es lo que ya usamos para la documentación de proyectos.
+The choice of tools is crucial, because we want to make little effort (fast, easy and simple), reuse and / or use markdown which is what we already use for project documentation.
 <br>
-Lo primero es saber qué repositorio se va a utilizar. Las alternativas
+The first thing is to know which repository to use. The alternatives:
 
-- Google Cloud Source Repositories es de Google y conviene si quieres integrarte con otras herramientas de google o si quieres acceder a varios diferentes repositorios (incluidos bitbucket y github)
-- Bitbucket es de Altassian, y conviene si quieres integrarte con Jira, Trello u otros productos de Altassian.
-- GitHub es el lider del mercado, llevo varios años teniendo proyectos en github sin problemas, por lo que no tengo motivos para cambiar.
+- Google Cloud Source Repositories is from Google and is convenient if you want to integrate with other google tools or if you want to access several different repositories (including bitbucket and github)
+- Bitbucket It is from Altassian, and is convenient if you want to integrate with Jira, Trello or other Altassian products.
+- GitHub  It is the market leader, I have been having projects on github for several years without problems, so I have no reason to change.
 
-Queremos que la documentación esté junto al código, todo en el mismo sitio, pero que sea accesible desde la web de una manera fácil. La opción más evidentee s usar github pages y usar jekyll, pero vemos alternativas.
+We want the documentation to be together with the code, all in the same place, but to be accessible from the web in an easy way. The most obvious option is to use github pages and use jekyll, but we see alternatives.
 
-- Hugo hecho en go, se anuncia como el más rápido.
-- Hexo es node, creciente comunidad, muy popular en China.
-- jekyll  es Ruby creado por  Github, para webs grandes se puede volver lento.
+- Hugo done in go, it is advertised as the fastest.
+- Hexo It is node, growing community, very popular in China.
+- jekyll is Ruby created by Github, for large websites it can get slow.
 
-Como hemos apostado por github, la web no va a ser muy grande y queremos sencillez, fácil de usar, nos quedaamos con jekyll y github pages.Si crecieramos mucho y viesemos problemas, [pasaríamos a Hugo y Netlify](https://pawelgrzybek.com/from-jekyll-to-hugo-from-github-pages-to-netlify/).
+As we have opted for github, the web is not going to be very big and we want simplicity, easy to use, we will stick with jekyll and github pages, if we grow a lot and see problems , [we would go to Hugo and Netlify](https://pawelgrzybek.com/from-jekyll-to-hugo-from-github-pages-to-netlify/).
 
-## Empezamos con github
-Lo primero es crearse una cuenta personal donde alojar el blog.
+## We start with github
+LThe first thing is to create a personal account to host the blog.
 <br>
-Debes de tener un usuario de github o crearte uno.
-v
-Es necesario crearse un repositorio con el nomnbre <ususario>.github.io que mmostrará los documentos bajo el enlace http://usuario.github.io
-ahí es donde se van a alojar las páginas, como queremos varios idiomas, creamos otro repositorio llamado es, para contener los documentos en español y su enlace será http://usuario.github.io/es
+You must have a github account or create one.
+
+It is necessary to create a repository with the name <user> .github.io that will show the documents under the link  http://usuario.github.io
+That is where the pages will be hosted, as we want several languages, we create another repository called es, to contain the documents in Spanish and its link will be http://usuario.github.io/es
 <br>
-Esta parte se puede configurar en github /settings
+This part can be configured in github /settings
 ![settings github](/assets/images/github_settings.png)
 
 
-## Empezamos con jekyll
+## We start with jekyll
 
-### Instalamos jekyll
+### how to install jekyll
 
-Usamos un ordenador con ubuntu y para instalar ruby 
+I use ubuntu and to install ruby
 ```script
 sudo apt-get install ruby-full build-essential zlib1g-dev
 ```
-después ya se puede instalar jekyll
+then you can install jekyll
 ```script
 gem install jekyll bundler
 
 ```
-comprobamos la versión instalada
+we check the installed version
 ```bash
 $ jekyll -v
 jekyll 4.2.0
 
 ```
-[Información para windows](https://www.kiltandcode.com/2020/04/30/how-to-create-a-blog-using-jekyll-and-github-pages-on-windows/) 
+[Information for windows](https://www.kiltandcode.com/2020/04/30/how-to-create-a-blog-using-jekyll-and-github-pages-on-windows/)
 
-### Creamos el primer blog básico
+### Start with the first basic blog
 
-En un directorio vacío hacemos:
+Create an empty directory and execute:
 ```bash
 jekyll new jekyll-site
 ```
-Nos crea un directorio llamado jekyll-site con los siguients ficheros con uma estructura
+It creates a directory called jekyll-site with the following files with a structure 
 ```
 jekyll-site/
   _posts/
@@ -88,12 +88,12 @@ jekyll-site/
   Gemfile
   404.html
 ```
-- _posts es el sitio donde se van a dejar los post /en markdown)
-- index.markdown es la página inicial, se puede modificar, pero mejor más tarde
-- about.markdown es la documentación sobre e l blog, o si es un blog personal detalles del creador.
-- _config.yml fichero de configuracion, en el que indicamos título del blog, email, cuetna de github de twitter los datos ficjos que se mostrarán en a web básica
+- _posts It is the place where the post / markdown will be left)
+- index.markdown is the initial page, it can be modified, but better later.
+- about.markdown is the documentation about the blog, or if it is a personal blog details of the creator.
+- _config.yml configuration file, in which we indicate blog title, email, twitter github account, the fixed data that will be displayed on the basic web
 <br>
-Modificamos los datos de _config.yml y levantamos el servidor
+we modify the _config.yml data and raise the server
 
 ```bash
 cd jekyll-site/
@@ -101,41 +101,41 @@ $ bundle exec jekyll serve
 Generating... 
        Jekyll Feed: Generating feed for posts
    Server address: http://127.0.0.1:4000/
-  Server running... press ctrl-c to stop.       
+  Server running... press ctrl-c to stop.
 ```
-Nos conectamos a http://127.0.0.1:4000/
+we connect to http://127.0.0.1:4000/
 ![Initial Start in jekyll](/assets/images/initial_jekyll.png)
 
-Una vez creado basta con ir añadiendo nuevos post, un nuevo markdown en la carpeta _post
+Once created, just add new posts, a new markdown in the _post folder 
 
-### Escogemos aspecto y tema de la web
-Ahora que sabemos como funciona, vamos a crear el blog de verdad, para ello lo primero es escoger el tema, definir que aspecto, navegación va a tener la web, defiir los aspectos gráficos, para luego solo dedicarnos a crear markdown con post.
+### We choose the aspect and theme of the web
+Now that we know how it works, we are going to create the real blog, for this the first thing is to choose the theme, define what aspect, navigation the web is going to have, define the graphic aspects, and then only dedicate ourselves to creating markdown with post.
 <br>
-Podemos ver los [temas por defecto que soporta github pages](https://pages.github.com/themes/)
-Pero añadieron la posibilidad de añadir temas en remoto, [posibles temas](https://jekyllthemes.io/github-pages-themes)
+We can see the [default themes that github pages supports] (https://pages.github.com/themes/)
+But there is the possibility of adding themes remotely, [possible themes](https://jekyllthemes.io/github-pages-themes)
 <br>
-Miramos temas con fotos, compatibilidad con github, gratuito y buscamos ejemplos de blogs creados con ese tema, que se vean las páginas en github y github pages.
+We look at themes with photos, compatibility with github, free and we look for examples of blogs created with that theme, which can be seen on github and github pages.
 <br>
-Nos gustan varios pero que se vean con ejempo reales en uso hay menos, al final, nos quedamos con https://github.com/mmistakes/minimal-mistakes
+We like several but looking with real examples in use there are less, in the end, we are left with https://github.com/mmistakes/minimal-mistakes
 <br>
-ejemplo de páginas web
+example web pages
 - https://zenglix.github.io en [github](https://github.com/zengliX/zengliX.github.io)
 - https://yxtay.github.io en [github](https://github.com/yxtay/yxtay.github.io)
 
-como información para añadir cosas más atrayente a los [posts](https://github.com/mmistakes/minimal-mistakes/tree/gh-pages-3.1.6/_posts)
+as information to add more attractive things to the [posts](https://github.com/mmistakes/minimal-mistakes/tree/gh-pages-3.1.6/_posts)
 <br>
-Como navegación queremos crear un enlace y página especial para un proyecto (añadir enlace en el menú y página fija con el indice general), y añadir fotos a los posts(no sean solo texto), cada post debe tener una foto en el head y esa misma foto se usará en el listado de post. Para facilitar esto y no tener que estar haciendo fotos continuamnete, habrá al menos una foto por categoría, y definiremos las categorías básicas que vamos a tener, así por defecto se le pondrá la foto de la categoría.
+As navigation we want to create a link and special page for a project (add a link in the menu and a fixed page with the general index), and add photos to the posts (not just text), each post must have a photo in the head and that same photo will be used in the post listing. To facilitate this and not have to be taking photos continuously, there will be at least one photo per category, and we will define the basic categories that we are going to have, so by default the photo of the category will be placed.
 
-### Modificaciones sobre la web
-Creamos dos páginas fijas aparte de los posts
-en la carpeta _pages
-- about.md  incorporamos el Curriculum Vitae y alguna información más.
-- [debateops.md](https://github.com/jarigita/jarigita.github.io/blob/main/_pages/debateops.md) explicación del proyecto e indice
+### Modifications on the web
+We create two fixed pages apart from the posts
+in the _pages folder
+- about.md  we incorporate the Curriculum Vitae and some more information.
+- [debateops.md](https://github.com/jarigita/jarigita.github.io/blob/main/_pages/debateops.md) explanation of the project and index
 <br>
-También queremos tener un enlace externo para redirigir a la web personal pero en otro idioma, basta con añadir en la navegación e enlace externo.
+We also want to have an external link to redirect to the personal web but in another language, just add an external link in the navigation.
 <br>
-para añadirlas en cada post se indica el enlace  **permalink: /DebateOps/** y se añaden al indice de navegación
-en **_data/navigation.yml** hay que poner 
+To add them in each post, the link ** permalink: / DebateOps / ** is indicated and they are added to the navigation index
+in ** _ data / navigation.yml ** you have to put
 
 ```html
 main:
@@ -147,12 +147,14 @@ main:
     url: https://jarigita.github.io/
 
 ```
-Probamos en local vemos que salen los enlaces y nos redirige a la página estática.
+81 / 5000
+Resultados de traducción
+We test locally, we see that the links come out and it redirects us to the static page
 <br>
-Ahora queremos sacar el listado de posts junto con una foto.
+Now we want to get the list of posts together with a photo.
 <br>
-Para ello hay que crear otra página con el listado de post
-en _pages creamos otra página **blog_page.md**
+To do this you have to create another page with the post list
+in _pages we create another page ** blog_page.md **
 ```html
 ---
 title:  "Blogs"
@@ -169,24 +171,24 @@ comments: true
     % include archive-single.html %
   % endfor %
 ```
-En permalink indicamos el enlace que va a tener
+In permalink we indicate the link that you will have
 <br>
-Realizamos un bucle a traves de todos los posts de la web poniendo una figura(imagen) y el archivo sencillo básico de cada post (el mismo que crea por defecto)
+We make a loop through all the posts on the web putting a figure (image) and the basic simple file of each post (the same one created by default)
 <br>
-Falta por enlazar la navegación
-en **_data/navigation.yml** hay que poner 
+It only remains to link the navigation
+in ** _ data / navigation.yml ** you have to put
 ```
 main:
   - title: "Blogs"
     url: /Blogs/
 ```
 
-Para que se muestre la imagen cada post debe tener en su cabecera un título (title) y una imagen de cabecera que vamos a alargar todo el ancho de la página.
+For the image to be displayed, each post must have in its header a title (title) and a header image that we are going to lengthen the entire width of the page.
 <br>
-Es decir, es obligatorio que cada post tenga de cabecera
+That is, it is mandatory that each post has a header
 ```
 ---
-title: Debateops. Por qué este blog.
+title: Debateops. Why a blog.
 header:
   overlay_image: assets/images/debateops.gif
   caption: "debateops"
@@ -199,31 +201,31 @@ tags:
 ---
 
 ```
-- **title** es el titulo del post (se sobreecribira en la imagen)
-- **header** con una imagen alargada y un caption (en cada post saldrá en la cabecera y en el listado de posts también)
-- **categories** al menos indicarle una categoría la post, y si no tiene imagen poner la de la categoria
-- **tags** especificar al menso un tag (la categoría) para faclitar la búsqueda del post
+- **title** It is the title of the post (it will be overwritten in the image)
+- **header** with an elongated image and a caption (in each post it will appear in the header and in the list of posts as well) 
+- **categories** at least indicate a category the post, and if it does not have an image put the category
+- **tags** specify at least a tag (the category) to facilitate the search of the post
 
-### Varios idiomas
-La opción escogida para tener varios idiomas ha sido crear dos web estáticas totalmente similares.
+### Multiple languages
+The option chosen to have several languages has been to create two totally similar static websites.
 <br>
 Esto nos permite tener la web de cada idioma independiente, no es obligatorio subir a la vez los post en ambas ni que sean los mismos exactamente. Nos permite no mezclar busquedas en varios idiomas, personalmente si busco en español prefiero que me salgan las cosas en español a duplicarse la misma información en varios idiomas.
 <br>
-Al ser la url en español la misa que en inglés solo añadiendo /es eso nos permite compartir fotos y recursos, de manera que no se duplica contenido entre las dos webs sino solo los post o recursos específicos de ese idioma. 
+This allows us to have the website of each language independent, it is not mandatory to upload the posts in both at the same time or that they are exactly the same. It allows us not to mix searches in several languages, personally if I search in Spanish I prefer that things come out in Spanish to duplicate the same information in several languages.
 <br>
-Tampoco hace falta indicar traducciones y tener listados de multiples idiomas.
+Nor is it necessary to indicate translations and have lists of multiple languages.
 
-## Conclusión
-Para ver el resultado de todo este posts es mi web personal [jarigita](https://jarigita.github.io/)
+## conclusion
+To see the result of all these posts is my personal website [jarigita](https://jarigita.github.io/) and the code [github](https://github.com/jarigita/jarigita.github.io)
 <br>
-Me ha parecido muy útil y conveniente mostrar los mismos documentos que ya se creaban en markdown de una manera más amigable como web, es como tener una vista técnica (código) y una vista tutorial (web).
-Como facilidad para subir post y mantenerla, al ser igual que el código, markdown y usando git y sus versiones, es muy fácil.
+I have found it very useful and convenient to show the same documents that were already created in markdown in a more web-friendly way, it is like having a technical view (code) and a tutorial view (web).
+As an ease to upload post and maintain it, being the same as the code, markdown and using git and its versions, it is very easy.
 <br>
-De aspecto gráfico, para mí es suficiente, no es un blog profesional, solo un conjunto de notas técnicas, por lo que prefiero sencillez e ir al grano, se ve bien y se maneja rápido.
+Graphic aspect, for me it is enough, it is not a professional blog, only a set of technical notes, so I prefer simplicity and to the point, it looks good and it is quick to handle.
 <br>
-Respecto a las subidas de cambios, el tiempo entre despliegues y que se vea efectivamente en la web varia de unas veces a otras, de manera que es mejor desplegar, ponerse a hacer otra cosa y luego comprobar, es un pero, como es gratis tampoco nos vamos a quejar.
+Regarding the uploads of changes, the time between deployments and that it is seen effectively on the web varies from one time to another, so it is better to deploy, start doing something else and then check, it is a but, as it is not free either we are going to complain.
 <br>
-Lo que si no he visto tan sencillo es modificar el aspecto, el funcionamiento básico va muy bien, pero si empiezas a cambiar aspecto o entrar en más bajo detalle, ya no es tan sencillo ni tan fácil. Si te equivocas, github pages manda un correo en el que solo indica la línea
+It does not seem so easy to modify the appearance, the basic operation is very good, but if you start to change the aspect or go into more low detail, it is no longer so simple or so easy. If you make a mistake, github pages sends an email in which it only indicates the line
 
 ```
 The page build failed for the `main` branch with the following error:
@@ -234,11 +236,11 @@ For information on troubleshooting Jekyll see:
 
   https://docs.github.com/articles/troubleshooting-jekyll-builds
 ```
-Para mí que quiero algo rápido y sencillo, mejor adaptarse a lo básico, si quieres algo más llamativo quizás explorar otras alternativas.
+For me, I want something quick and simple, better to adapt to the basics, if you want something more striking perhaps explore other alternatives.
 <br>
-Lo recomiendo y me parece miy útil github page con jekyll.
+I recommend and find my very useful github page with jekyll. 
 
-## Para más información
+## For more information
 
 [Jekyll on Ubuntu](https://jekyllrb.com/docs/installation/ubuntu/) como instalar jekyll en ubuntu
 
